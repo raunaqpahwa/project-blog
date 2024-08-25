@@ -4,11 +4,13 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
+    "prebuild": "node ./generate-rss.js",
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
     "new-component": "new-component"
   },
+  "type": "module",
   "dependencies": {
     "bright": "0.8.4",
     "clsx": "1.2.1",
@@ -23,6 +25,7 @@
     "next-mdx-remote": "4.4.1",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "react-feather": "2.0.10"
+    "react-feather": "2.0.10",
+    "rss": "^1.2.2"
   }
 }

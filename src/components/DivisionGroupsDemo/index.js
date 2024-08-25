@@ -1,2 +1,5 @@
-export * from './DivisionGroupsDemo';
-export { default } from './DivisionGroupsDemo';
+import React from "react";
+
+const DivisionGroupsDemo = React.lazy(() => import("./DivisionGroupsDemo"));
+
+export default DivisionGroupsDemo;
